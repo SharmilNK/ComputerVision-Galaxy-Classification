@@ -217,8 +217,17 @@ function App() {
           />
         </div>
         <div className="landing-text">
-          <h1 className="landing-title">Galaxy Morphology AI</h1>
-          <p className="landing-subtitle">Classify galaxies with state-of-the-art deep learning</p>
+          <div className="landing-badge">
+            <span className="badge-icon">✨</span>
+            <span>AI-Powered Classification</span>
+          </div>
+          <h1 className="landing-title">
+            <span className="title-part-1">Galaxy Morphology</span>
+            <span className="title-part-2">AI Classifier</span>
+          </h1>
+          <p className="landing-subtitle">
+            Upload a galaxy image and discover its morphology using state-of-the-art deep learning technology
+          </p>
         </div>
       </section>
 
@@ -228,22 +237,15 @@ function App() {
       {/* How Astrophysicists Use This Section */}
       <section className="info-section">
         <div className="info-content">
-          <div className="info-text">
-            <h2>How Astrophysicists Use This</h2>
-            <p>
-              Galaxy morphology classification is a fundamental tool in modern astrophysics. 
-              By automatically identifying whether a galaxy is elliptical or spiral, researchers 
-              can analyze large datasets from telescopes like the Hubble Space Telescope and 
-              the James Webb Space Telescope. This classification helps understand galaxy 
-              formation, evolution, and the distribution of matter in the universe.
-            </p>
-            <p>
-              The deep learning model uses convolutional neural networks to identify key 
-              features in galaxy images, such as spiral arms, central bulges, and overall 
-              structure. This automated classification enables astronomers to process millions 
-              of galaxy images efficiently, accelerating discoveries in cosmology and 
-              extragalactic astronomy.
-            </p>
+          <div className="info-card">
+            <div className="info-card-content">
+              <h2>How Astrophysicists Use This</h2>
+              <p>
+                Galaxy morphology classification helps researchers analyze data from the Hubble and James Webb Space Telescopes. 
+                By identifying elliptical and spiral galaxies, scientists can understand galaxy formation, evolution, and the 
+                distribution of matter in the universe.
+              </p>
+            </div>
           </div>
           <div className="info-image-container">
             <img 
@@ -308,7 +310,14 @@ function App() {
               onClick={handleClassify}
               disabled={!selectedImage || loading}
             >
-              {loading ? 'Classifying...' : 'Classify Galaxy'}
+              {loading ? (
+                <span className="loading-content">
+                  <span className="spinner"></span>
+                  Classifying...
+                </span>
+              ) : (
+                'Classify Galaxy'
+              )}
             </button>
           </div>
 
@@ -349,30 +358,56 @@ function App() {
       {/* Spacing */}
       <div className="section-spacing"></div>
 
-      {/* Dark Energy Section */}
-      <section className="dark-energy-section">
-        <h2>Understanding Dark Energy Through Galaxy Morphology</h2>
-        <p>
-          Galaxy morphology classification plays a crucial role in understanding dark energy, 
-          one of the most profound mysteries in modern cosmology. Dark energy is the 
-          mysterious force driving the accelerated expansion of the universe, and its nature 
-          remains one of the biggest questions in physics.
-        </p>
-        <p>
-          By classifying large numbers of galaxies and mapping their distribution across 
-          cosmic time, astronomers can trace the expansion history of the universe. 
-          Different galaxy types (elliptical vs spiral) form and evolve differently, and 
-          their relative abundances at different redshifts provide clues about the universe's 
-          evolution. The distribution and clustering of these galaxies help measure the 
-          large-scale structure of the universe, which is directly influenced by dark energy.
-        </p>
-        <p>
-          Automated classification systems like this one enable the analysis of millions of 
-          galaxies from current and future surveys, such as the Vera C. Rubin Observatory's 
-          Legacy Survey of Space and Time (LSST). These massive datasets will provide 
-          unprecedented precision in measuring dark energy's properties and understanding 
-          its role in the fate of the universe.
-        </p>
+      {/* Science Behind Galaxy Classification Section */}
+      <section className="science-section">
+        <div className="science-header">
+          <h2>The Science Behind Galaxy Classification</h2>
+          <p className="science-subtitle">
+            Discover how AI-powered galaxy morphology classification is revolutionizing our understanding of the cosmos
+          </p>
+        </div>
+        
+        <div className="science-cards">
+          <div className="science-card card-purple">
+            <div className="card-icon">🔭</div>
+            <h3>How Astrophysicists Use This</h3>
+            <p>
+              Galaxy morphology classification helps researchers analyze data from the Hubble and James Webb Space Telescopes. 
+              By identifying elliptical and spiral galaxies, scientists can understand galaxy formation, evolution, and the 
+              distribution of matter in the universe.
+            </p>
+          </div>
+
+          <div className="science-card card-blue">
+            <div className="card-icon">🧠</div>
+            <h3>Deep Learning Technology</h3>
+            <p>
+              The model uses convolutional neural networks (ResNet-18) to identify key features like spiral arms, central 
+              bulges, and overall structure. This enables processing millions of galaxy images efficiently, accelerating 
+              discoveries in cosmology.
+            </p>
+          </div>
+
+          <div className="science-card card-dark-purple">
+            <div className="card-icon">🌌</div>
+            <h3>Understanding Dark Energy</h3>
+            <p>
+              By classifying galaxies and mapping their distribution across cosmic time, astronomers trace the universe's 
+              expansion history. Different galaxy types evolve differently, providing clues about dark energy—the mysterious 
+              force driving cosmic acceleration.
+            </p>
+          </div>
+
+          <div className="science-card card-red">
+            <div className="card-icon">⭐</div>
+            <h3>Future of Space Research</h3>
+            <p>
+              Automated classification enables analysis of millions of galaxies from surveys like the Vera C. Rubin Observatory's 
+              LSST. These datasets will provide unprecedented precision in measuring dark energy and understanding the fate 
+              of the universe.
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   );
