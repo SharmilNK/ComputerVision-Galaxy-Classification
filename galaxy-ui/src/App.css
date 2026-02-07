@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 .app {
   background-color: #000000;
   color: #ffffff;
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -15,6 +24,8 @@
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* Starry Night Sky Background */
@@ -121,18 +132,15 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .landing-image-container {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
+  min-height: 400px;
   overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: 0;
-  opacity: 0.5;
 }
 
 .landing-image {
@@ -144,11 +152,15 @@
 
 .landing-text {
   text-align: center;
-  padding: 30px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+  padding: 60px 40px;
+  background: transparent;
   position: relative;
   z-index: 1;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .landing-badge {
