@@ -239,11 +239,8 @@ function App() {
         <div className="info-content">
           <div className="info-card">
             <div className="info-card-content">
-              <h2>How Astrophysicists Use This</h2>
               <p>
-                Galaxy morphology classification helps researchers analyze data from the Hubble and James Webb Space Telescopes. 
-                By identifying elliptical and spiral galaxies, scientists can understand galaxy formation, evolution, and the 
-                distribution of matter in the universe.
+                Galaxy morphology classification plays a crucial role in understanding dark energy, one of the most profound mysteries in modern cosmology. Dark energy is the mysterious force driving the accelerated expansion of the universe, and its nature remains one of the biggest questions in physics.
               </p>
             </div>
           </div>
