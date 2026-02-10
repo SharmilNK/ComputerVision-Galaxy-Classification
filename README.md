@@ -39,7 +39,7 @@ ComputerVision-Galaxy-Classification/
 |             
 ├── main.py                        # Gradio backend (loads model, runs prediction + Grad-CAM)
 ├── requirements.txt               # Python dependencies for main.py
-├── setup.ipynb                    # Notebook: download data, train model, save .pth
+├── setup.py                       # download data, train model, save .pth
 ├── models/
 |   ├── svm_model.joblib           # Optional classical ml model -SVM
 │   ├── baseline_galaxy_model.pth  # Optional baseline model
@@ -52,7 +52,9 @@ ComputerVision-Galaxy-Classification/
 │   ├── package.json
 │   ├── vercel.json                # Vercel build config
 │   └── ...
-└── README.md                     
+└── README.md
+|── notebooks
+│   ├── setup.ipynb               # Notebook: exploratory analysis        
 ```
 
 ---
