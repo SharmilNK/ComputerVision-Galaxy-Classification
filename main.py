@@ -38,9 +38,12 @@ except Exception as e:
     print(f"Warning: Could not patch Gradio client utils: {e}")
     pass  # If patching fails, continue anyway
 
+
 # Model configuration (supports both root and models/ folder)
 _MODEL_NAME = "robust_galaxy_model.pth"
 MODEL_PATH = _MODEL_NAME if os.path.exists(_MODEL_NAME) else os.path.join("models", _MODEL_NAME)
+
+
 NUM_CLASSES = 2
 CLASS_NAMES = ["Elliptical", "Spiral"]
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
