@@ -41,7 +41,7 @@ ComputerVision-Galaxy-Classification/
 ├── requirements.txt               # Python dependencies for main.py
 ├── setup.ipynb                    # Notebook: download data, train model, save .pth
 ├── models/
-|   ├── classical_ml_model.pth     # Optional classical ml model
+|   ├── svm_model.joblib           # Optional classical ml model -SVM
 │   ├── baseline_galaxy_model.pth  # Optional baseline model
 │   └── robust_galaxy_model.pth    # Trained ResNet-18 weights (you create this)
 ├── galaxy-ui/                     # React frontend (what you deploy to Vercel)
@@ -221,3 +221,7 @@ MIT (or as specified for Galaxy Zoo data and any third-party models). When using
 
 - [Galaxy Zoo – The Galaxy Challenge](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge) (Kaggle)
 - [PyTorch](https://pytorch.org/), [TorchVision](https://pytorch.org/vision/), [Gradio](https://gradio.app/), [Hugging Face Spaces](https://huggingface.co/spaces)
+
+## Worked on by
+Tiffany Degbotse
+Sharmil Nanjappa
