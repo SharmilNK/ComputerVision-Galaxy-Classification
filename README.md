@@ -225,3 +225,6 @@ MIT (or as specified for Galaxy Zoo data and any third-party models). When using
 ## Worked on by
 Tiffany Degbotse
 Sharmil Nanjappa
+
+## AI Citation
+AI was used to generate syntax for part of the code, CSS and Java scripts for UI, process steps to link Gradio with React and deploy on Vercel. AI was used to understand and learn only, the concept and ideation was original.
